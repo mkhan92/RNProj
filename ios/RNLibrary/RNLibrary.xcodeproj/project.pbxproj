@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		503F0F4F849346283465E05F /* Pods_RNLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8A5C98D82707F87A957A2 /* Pods_RNLibrary.framework */; };
 		76C2276E34C73302E5EEDBDF /* Pods_RNLibrary_RNLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A435DE598A5ED0480EB383 /* Pods_RNLibrary_RNLibraryTests.framework */; };
 		BA9FB85624D8FA86006A5BE4 /* RNLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9FB84C24D8FA86006A5BE4 /* RNLibrary.framework */; };
 		BA9FB85B24D8FA86006A5BE4 /* RNLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9FB85A24D8FA86006A5BE4 /* RNLibraryTests.swift */; };
@@ -49,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503F0F4F849346283465E05F /* Pods_RNLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

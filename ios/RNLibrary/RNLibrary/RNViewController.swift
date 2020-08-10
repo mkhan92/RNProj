@@ -5,10 +5,10 @@ open class RNViewController: UIViewController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
-//        let bundle = Bundle(identifier: "com.example.RNLibrary")
+        let bundle = Bundle(identifier: "com.example.RNLibrary")
 //        let bundle = Bundle(for: type(of: self))
 //        NSLog(bundle!.bundlePath)
-        let jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")
+        let jsCodeLocation = bundle?.url(forResource: "main", withExtension: "jsbundle")
         
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation!,
