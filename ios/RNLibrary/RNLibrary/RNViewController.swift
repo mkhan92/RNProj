@@ -7,8 +7,8 @@ open class RNViewController: UIViewController {
         super.viewDidLoad()
         let bundle = Bundle(identifier: "com.example.RNLibrary")
 //        let bundle = Bundle(for: type(of: self))
-//        NSLog(bundle!.bundlePath)
-        let jsCodeLocation = bundle?.url(forResource: "main", withExtension: "jsbundle")
+        NSLog(bundle!.bundlePath)
+        let jsCodeLocation = bundle!.url(forResource: "main", withExtension: "jsbundle")
         
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation!,
