@@ -149,11 +149,11 @@ Pod::Spec.new do |spec|
   # spec.dependency 'React-RCTNetwork', version
   # spec.dependency 'React-RCTText', version
 
-  podspecs = [
-    '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
-    '../../node_modules/react-native/third-party-podspecs/Folly.podspec',
-    '../../node_modules/react-native/third-party-podspecs/glog.podspec'
-  ]
+  # podspecs = [
+  #   '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
+  #   '../../node_modules/react-native/third-party-podspecs/Folly.podspec',
+  #   '../../node_modules/react-native/third-party-podspecs/glog.podspec'
+  # ]
   # podspecs.each do |podspec_path|
   #   s = Pod::Specification.from_file podspec_path
   #   spec.dependency s.name, "#{s.version}"
