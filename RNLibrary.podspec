@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source       = { :git => "http://github.com/mohamadkhan19/RNLibrary.git", :tag => "#{spec.version}" }
-  spec.source       = { :git => "https://raw.githubusercontent.com/mkhan92/RNProj/master" }
+  spec.source       = { :git => "https://github.com/mkhan92/RNProj/master" }
   # :git => "https://github.com/facebook/react-native.git", :tag => "v#{version}",
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
