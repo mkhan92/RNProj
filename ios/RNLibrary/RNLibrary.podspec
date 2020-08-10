@@ -142,12 +142,12 @@ Pod::Spec.new do |spec|
   # React is split into a set of subspecs, these are the essentials
   spec.dependency 'React' , version
   spec.dependency 'React-Core', version
-  spec.dependency 'React-CxxBridge', version
-  spec.dependency 'React-RCTAnimation', version
-  spec.dependency 'React-RCTImage', version
-  spec.dependency 'React-RCTLinkingIOS', version
-  spec.dependency 'React-RCTNetwork', version
-  spec.dependency 'React-RCTText', version
+  # spec.dependency 'React-CxxBridge', version
+  # spec.dependency 'React-RCTAnimation', version
+  # spec.dependency 'React-RCTImage', version
+  # spec.dependency 'React-RCTLinkingIOS', version
+  # spec.dependency 'React-RCTNetwork', version
+  # spec.dependency 'React-RCTText', version
 
   podspecs = [
     '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
