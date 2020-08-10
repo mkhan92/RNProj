@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   The Library is a React Native Library. This is a research work. A Proof of Concept to test how to make pods.
                    DESC
 
-  spec.homepage     = "http://github.com/mohamadkhan19/RNLibrary"
+  spec.homepage     = "https://github.com/mkhan92/RNProj"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source       = { :git => "http://github.com/mohamadkhan19/RNLibrary.git", :tag => "#{spec.version}" }
-  spec.source       = { :git => "https://github.com/facebook/react-native.git", :tag => "v#{version}", :http => "file:///Users/mkhan92/Documents/work/milestone_1/RNProj/ios/RNLibrary"}
+  spec.source       = { :git => "https://github.com/facebook/react-native.git", :tag => "v#{version}", :git => "https://github.com/mkhan92/RNProj/master/ios/RNLibrary" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -142,12 +142,12 @@ Pod::Spec.new do |spec|
   # React is split into a set of subspecs, these are the essentials
   spec.dependency 'React' , version
   spec.dependency 'React-Core', version
-  # spec.dependency 'React-CxxBridge', version
-  # spec.dependency 'React-RCTAnimation', version
-  # spec.dependency 'React-RCTImage', version
-  # spec.dependency 'React-RCTLinkingIOS', version
-  # spec.dependency 'React-RCTNetwork', version
-  # spec.dependency 'React-RCTText', version
+  spec.dependency 'React-CxxBridge', version
+  spec.dependency 'React-RCTAnimation', version
+  spec.dependency 'React-RCTImage', version
+  spec.dependency 'React-RCTLinkingIOS', version
+  spec.dependency 'React-RCTNetwork', version
+  spec.dependency 'React-RCTText', version
 
   podspecs = [
     '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
