@@ -108,7 +108,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resource = "ios/RNLibrary/Assets/main.jsbundle"
+  spec.resource = "ios/RNLibrary/Assets/*"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
