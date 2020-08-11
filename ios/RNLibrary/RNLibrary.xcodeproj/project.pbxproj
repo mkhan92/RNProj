@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		76C2276E34C73302E5EEDBDF /* Pods_RNLibrary_RNLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A435DE598A5ED0480EB383 /* Pods_RNLibrary_RNLibraryTests.framework */; };
+		BA65925724E29ACD00F88F74 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = BA9FB87924D94ADB006A5BE4 /* main.jsbundle */; };
+		BA65925824E29AD200F88F74 /* app.json in Resources */ = {isa = PBXBuildFile; fileRef = BA9FB87B24D94ADB006A5BE4 /* app.json */; };
+		BA65925924E29AD400F88F74 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9FB88124D94ADB006A5BE4 /* logo.png */; };
 		BA9FB85624D8FA86006A5BE4 /* RNLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9FB84C24D8FA86006A5BE4 /* RNLibrary.framework */; };
 		BA9FB85B24D8FA86006A5BE4 /* RNLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9FB85A24D8FA86006A5BE4 /* RNLibraryTests.swift */; };
 		BA9FB85D24D8FA86006A5BE4 /* RNLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9FB84F24D8FA86006A5BE4 /* RNLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -204,6 +207,7 @@
 				BA9FB84824D8FA86006A5BE4 /* Sources */,
 				BA9FB84924D8FA86006A5BE4 /* Frameworks */,
 				BA9FB84A24D8FA86006A5BE4 /* Resources */,
+				BA65925624E29AAE00F88F74 /* Bundle react native code and images */,
 			);
 			buildRules = (
 			);
@@ -277,6 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA65925724E29ACD00F88F74 /* main.jsbundle in Resources */,
+				BA65925824E29AD200F88F74 /* app.json in Resources */,
+				BA65925924E29AD400F88F74 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +340,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BA65925624E29AAE00F88F74 /* Bundle react native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle react native code and images";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport NODE_BINARY=node\n../../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		F3E0F65C77F674DEB5945ABB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -508,7 +533,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_ASSET_PATHS = Assets;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -542,7 +567,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_ASSET_PATHS = Assets;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
