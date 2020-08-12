@@ -12,7 +12,7 @@
     "flow": "flow",
     "flow-stop": "flow stop",
     "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/RNLibrary/Assets/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios/RNLibrary/Assets'",
-    "build:android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
+    "build:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/RNLibrary/src/main/assets/index.android.bundle --assets-dest android/RNLibrary/src/main/res/",
     "build:apk:debug": "./android/gradlew --stop && npx jetify && cd android && ./gradlew clean bundleDebugJsAndAssets copyDebugBundledJs assembleDebug && cd ..",
     "build:apk:staging": "./android/gradlew --stop && npx jetify && cd android && ./gradlew clean bundleStagingJsAndAssets copyStagingBundledJs assembleStaging && cd ..",
     "build:apk:release": "./android/gradlew --stop && npx jetify && cd android && ./gradlew clean bundleReleaseJsAndAssets copyReleaseBundledJs assembleRelease && cd ..",
